@@ -1,0 +1,4 @@
+ts_code,target_weight,name,industry,pe,pe_percentile
+000001.SZ,0.1,平安银行,银行,5.8,0.1
+000002.SZ,0.05,万科A,房地产,6.2,0.2
+000004.SZ,0.03,国华网安,计算机,,
