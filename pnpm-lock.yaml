@@ -98,6 +98,9 @@ importers:
       crypto-js:
         specifier: 4.2.0
         version: 4.2.0
+      csv-parse:
+        specifier: ^6.1.0
+        version: 6.1.0
       currency-symbol-map:
         specifier: 5.1.0
         version: 5.1.0
@@ -150,8 +153,8 @@ importers:
         specifier: 0.7.1
         version: 0.7.1
       imapflow:
-        specifier: 1.2.0
-        version: 1.2.0
+        specifier: 1.2.3
+        version: 1.2.3
       instagram-private-api:
         specifier: 1.46.1
         version: 1.46.1
@@ -3212,6 +3215,9 @@ packages:
     resolution: {integrity: sha512-KyOS/kJMEq5O9GdPnaf82noigg5X5DYn0kZPJTaAsCUaBizp6Xa1y9D4Qoqf/JazEXWuruErHgVXwjN5391ZJw==}
     engines: {node: '>=20'}
 
+  csv-parse@6.1.0:
+    resolution: {integrity: sha512-CEE+jwpgLn+MmtCpVcPtiCZpVtB6Z2OKPTr34pycYYoL7sxdOkXDdQ4lRiw6ioC0q6BLqhc6cKweCVvral8yhw==}
+
   currency-symbol-map@5.1.0:
     resolution: {integrity: sha512-LO/lzYRw134LMDVnLyAf1dHE5tyO6axEFkR3TXjQIOmMkAM9YL6QsiUwuXzZAmFnuDJcs4hayOgyIYtViXFrLw==}
 
@@ -4130,8 +4136,8 @@ packages:
     engines: {node: '>=6.9.0'}
     hasBin: true
 
-  imapflow@1.2.0:
-    resolution: {integrity: sha512-xX4L/61Cw6oKKWN6QpQu3eeyWEvn5Qjc/XJf1ycsMSXT4GlAKlYJHaKqQvPf6UdLEPcrVUcdD4noLdfXzsGqQA==}
+  imapflow@1.2.3:
+    resolution: {integrity: sha512-gpFiB2Dnbr3/z8wN/BFKhyfG19f8Hh2zFe6nkhTuQiXQR9PgDJ6qDlRQ11uCAZWJxpiSKRkFCM4p5Hyf75Z1NA==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -5813,6 +5819,7 @@ packages:
   tsdown@0.17.4:
     resolution: {integrity: sha512-z+kNuv1rwM1POQIufDUVrdNc/uGy0ueRVafCyDH39IdHxin4JXgB8DNGSPoqdIpcOpqUoRbNreK8NxENFmlhKw==}
     engines: {node: '>=20.19.0'}
+    deprecated: Including an unexpected breaking change (copy behavior)
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
@@ -9243,6 +9250,8 @@ snapshots:
     transitivePeerDependencies:
       - postcss
 
+  csv-parse@6.1.0: {}
+
   currency-symbol-map@5.1.0: {}
 
   d@1.0.2:
@@ -10351,7 +10360,7 @@ snapshots:
 
   image-size@0.7.5: {}
 
-  imapflow@1.2.0:
+  imapflow@1.2.3:
     dependencies:
       '@zone-eu/mailsplit': 5.4.8
       encoding-japanese: 2.2.0
