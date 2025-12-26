@@ -40,10 +40,10 @@ importers:
         version: 4.3.1
       '@hono/node-server':
         specifier: 1.19.7
-        version: 1.19.7(hono@4.11.1)
+        version: 1.19.7(hono@4.11.2)
       '@hono/zod-openapi':
         specifier: 1.1.5
-        version: 1.1.5(hono@4.11.1)(zod@4.2.0)
+        version: 1.1.5(hono@4.11.2)(zod@4.2.0)
       '@notionhq/client':
         specifier: 5.4.0
         version: 5.4.0
@@ -76,7 +76,7 @@ importers:
         version: 0.0.25
       '@scalar/hono-api-reference':
         specifier: 0.9.28
-        version: 0.9.28(hono@4.11.1)
+        version: 0.9.28(hono@4.11.2)
       '@sentry/node':
         specifier: 10.30.0
         version: 10.30.0
@@ -98,6 +98,9 @@ importers:
       crypto-js:
         specifier: 4.2.0
         version: 4.2.0
+      csv-parse:
+        specifier: ^6.1.0
+        version: 6.1.0
       currency-symbol-map:
         specifier: 5.1.0
         version: 5.1.0
@@ -135,8 +138,8 @@ importers:
         specifier: 2.1.78
         version: 2.1.78
       hono:
-        specifier: 4.11.1
-        version: 4.11.1
+        specifier: 4.11.2
+        version: 4.11.2
       html-to-text:
         specifier: 9.0.5
         version: 9.0.5
@@ -3212,6 +3215,9 @@ packages:
     resolution: {integrity: sha512-KyOS/kJMEq5O9GdPnaf82noigg5X5DYn0kZPJTaAsCUaBizp6Xa1y9D4Qoqf/JazEXWuruErHgVXwjN5391ZJw==}
     engines: {node: '>=20'}
 
+  csv-parse@6.1.0:
+    resolution: {integrity: sha512-CEE+jwpgLn+MmtCpVcPtiCZpVtB6Z2OKPTr34pycYYoL7sxdOkXDdQ4lRiw6ioC0q6BLqhc6cKweCVvral8yhw==}
+
   currency-symbol-map@5.1.0:
     resolution: {integrity: sha512-LO/lzYRw134LMDVnLyAf1dHE5tyO6axEFkR3TXjQIOmMkAM9YL6QsiUwuXzZAmFnuDJcs4hayOgyIYtViXFrLw==}
 
@@ -4021,8 +4027,8 @@ packages:
   hmacsha1@1.0.0:
     resolution: {integrity: sha512-4FP6J0oI8jqb6gLLl9tSwVdosWJ/AKSGJ+HwYf6Ixe4MUcEkst4uWzpVQrNOCin0fzTRQbXV8ePheU8WiiDYBw==}
 
-  hono@4.11.1:
-    resolution: {integrity: sha512-KsFcH0xxHes0J4zaQgWbYwmz3UPOOskdqZmItstUG93+Wk1ePBLkLGwbP9zlmh1BFUiL8Qp+Xfu9P7feJWpGNg==}
+  hono@4.11.2:
+    resolution: {integrity: sha512-o+avdUAD1v94oHkjGBhiMhBV4WBHxhbu0+CUVH78hhphKy/OKQLxtKjkmmNcrMlbYAhAbsM/9F+l3KnYxyD3Lg==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -5813,6 +5819,7 @@ packages:
   tsdown@0.17.4:
     resolution: {integrity: sha512-z+kNuv1rwM1POQIufDUVrdNc/uGy0ueRVafCyDH39IdHxin4JXgB8DNGSPoqdIpcOpqUoRbNreK8NxENFmlhKw==}
     engines: {node: '>=20.19.0'}
+    deprecated: Including an unexpected breaking change (copy behavior)
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
@@ -7402,21 +7409,21 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hono/node-server@1.19.7(hono@4.11.1)':
+  '@hono/node-server@1.19.7(hono@4.11.2)':
     dependencies:
-      hono: 4.11.1
+      hono: 4.11.2
 
-  '@hono/zod-openapi@1.1.5(hono@4.11.1)(zod@4.2.0)':
+  '@hono/zod-openapi@1.1.5(hono@4.11.2)(zod@4.2.0)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.2.0)
-      '@hono/zod-validator': 0.7.5(hono@4.11.1)(zod@4.2.0)
-      hono: 4.11.1
+      '@hono/zod-validator': 0.7.5(hono@4.11.2)(zod@4.2.0)
+      hono: 4.11.2
       openapi3-ts: 4.5.0
       zod: 4.2.0
 
-  '@hono/zod-validator@0.7.5(hono@4.11.1)(zod@4.2.0)':
+  '@hono/zod-validator@0.7.5(hono@4.11.2)(zod@4.2.0)':
     dependencies:
-      hono: 4.11.1
+      hono: 4.11.2
       zod: 4.2.0
 
   '@humanfs/core@0.19.1': {}
@@ -8206,10 +8213,10 @@ snapshots:
     dependencies:
       '@scalar/types': 0.5.2
 
-  '@scalar/hono-api-reference@0.9.28(hono@4.11.1)':
+  '@scalar/hono-api-reference@0.9.28(hono@4.11.2)':
     dependencies:
       '@scalar/core': 0.3.26
-      hono: 4.11.1
+      hono: 4.11.2
 
   '@scalar/types@0.5.2':
     dependencies:
@@ -9243,6 +9250,8 @@ snapshots:
     transitivePeerDependencies:
       - postcss
 
+  csv-parse@6.1.0: {}
+
   currency-symbol-map@5.1.0: {}
 
   d@1.0.2:
@@ -10225,7 +10234,7 @@ snapshots:
 
   hmacsha1@1.0.0: {}
 
-  hono@4.11.1: {}
+  hono@4.11.2: {}
 
   hookable@5.5.3: {}
 
