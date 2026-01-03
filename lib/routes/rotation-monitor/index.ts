@@ -165,7 +165,7 @@ export const route: Route = {
                 mdContent += `\n`;
 
                 // 当日高潜板块
-                mdContent += `## 📊 当日高潜板块：${bottomIndustry}\n\n`;
+                mdContent += `## 📉 当日高潜板块：${bottomIndustry}\n\n`;
                 mdContent += `### 📋 股票列表\n\n`;
                 for (const [index, record] of bottomRecords.entries()) {
                     mdContent += `${index + 1}. **${record.name}** (${record.ts_code})\n`;
@@ -173,7 +173,7 @@ export const route: Route = {
                 mdContent += `\n`;
 
                 // 插入图表
-                mdContent += `## 📉 行业表现趋势
+                mdContent += `## 📊 行业表现趋势
 
 `;
                 if (files.image) {
