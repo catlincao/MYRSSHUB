@@ -266,6 +266,16 @@ if (!config.isPackage && !process.env.VERCEL_ENV) {
             rewriteRequestPath: (path) => (path === '/favicon.ico' ? '/favicon.png' : path),
         })
     );
+
+    // 为轮动行情图片添加静态文件服务
+    const rotationImagesPath = process.env.ROTATION_IMAGES_PATH || '/Users/catlincao/repo/github/catlincao/quant_tool/outputs/rotation';
+    app.use(
+        '/rotation-images/*',
+        serveStatic({
+            root: rotationImagesPath,
+            rewriteRequestPath: (path) => path.replace(/^\/rotation-images/, ''),
+        })
+    );
 }
 
 export default app;
