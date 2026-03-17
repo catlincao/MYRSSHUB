@@ -16384,7 +16384,8 @@ export default {
           "hyoban"
         ],
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 3,
         "example": "/bilibili/ranking/all",
@@ -16651,8 +16652,7 @@ export default {
           "embed": "默认为开启内嵌视频, 任意值为关闭"
         },
         "categories": [
-          "social-media",
-          "popular"
+          "social-media"
         ],
         "location": "video-all.ts",
         "module": () => import('@/routes/bilibili/video-all.ts')
@@ -95789,7 +95789,8 @@ export default {
       "/pornstar/:username/:language?/:sort?": {
         "path": "/pornstar/:username/:language?/:sort?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 3,
         "example": "/pornhub/pornstar/june-liu/www/mr",
