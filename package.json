@@ -124,7 +124,7 @@
         "query-string": "9.3.1",
         "rate-limiter-flexible": "9.0.1",
         "re2js": "1.2.0",
-        "rebrowser-puppeteer": "24.8.1",
+        "rebrowser-puppeteer": "25.14.101",
         "rfc4648": "1.5.4",
         "rss-parser": "3.13.0",
         "sanitize-html": "2.17.0",
